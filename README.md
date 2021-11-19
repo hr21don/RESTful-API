@@ -24,31 +24,12 @@ All HTTP methods can be used in API calls. A well-designed REST API is similar t
 * https://www.npmjs.com/package/nodemon 
 * https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
-## Build-Your-Own RESTful-API
+## Here is something to get you started on your RESTful journey!!! 
 
 ## Server Code
 
-//jshint esversion:6
+<img width="210" alt="mandela-featured-image2" src="https://user-images.githubusercontent.com/91548582/142669313-61e15801-4913-4652-8f6d-a17b55f2e7d2.png">
 
-const express = require("express");
-const bodyParser = require("body-parser");
-const ejs = require("ejs");
-const mongoose = require('mongoose');
-
-const app = express();
-
-app.set('view engine', 'ejs');
-
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
-app.use(express.static("public"));
-
-//TODO
-
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
-});
 
 ## Example Document
 
