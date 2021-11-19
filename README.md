@@ -38,13 +38,14 @@ All HTTP methods can be used in API calls. A well-designed REST API is similar t
     "content" : "API stands for Application Programming Interface. It is a set of subroutine tools & communication protocols used for building software."
 }
 ```
+
 ```
 {
     "title" : "Bootstrap",
     "content" : "This is a framework developed by Twitter that contains pre-made front-end templates for web design"
 }
-
 ```
+
 ```
 {
     "title" : "DOM",
