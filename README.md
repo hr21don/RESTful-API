@@ -1,5 +1,5 @@
 # RESTful-API
-An RESTful-API adhering to  REST architecture. 
+A RESTful-API adhering to  REST architecture. 
 
 ## How does it work? 
 
