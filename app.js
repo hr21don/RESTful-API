@@ -34,7 +34,7 @@ const articleSchema = {
 //Creating new MongooseModel to define article collection
 const Article = mongoose.model("Article", articleSchema);
 
-// Target all Articles using App.route() to handle HTTP verbs
+// Target all Articles using App.route() 
 
 app.route("/articles")
 
@@ -76,7 +76,7 @@ app.route("/articles")
   });
 
 
-// Get A Specific Article using App.route() to handle HTTP verbs
+// Get A Specific Article using App.route()
 
 app.route("/articles/:articleTitle")
 
