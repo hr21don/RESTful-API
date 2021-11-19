@@ -27,26 +27,41 @@ All HTTP methods can be used in API calls. A well-designed REST API is similar t
 ## Here is something to get you started on your RESTful journey!!! 
 
 ## Server Code
+```
+//jshint esversion:6
 
-<img width="210" alt="mandela-featured-image2" src="https://user-images.githubusercontent.com/91548582/142669313-61e15801-4913-4652-8f6d-a17b55f2e7d2.png">
+const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
+const mongoose = require('mongoose');
 
+const app = express();
 
+app.set('view engine', 'ejs');
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(express.static("public"));
+
+//TODO
+
+app.listen(3000, function() {
+  console.log("Server started on port 3000");
+});
+```
 ## Example Document
 ```
 {
     "title" : "API",
     "content" : "API stands for Application Programming Interface. It is a set of subroutine tools & communication protocols used for building software."
 }
-```
 
-```
 {
     "title" : "Bootstrap",
     "content" : "This is a framework developed by Twitter that contains pre-made front-end templates for web design"
 }
-```
 
-```
 {
     "title" : "DOM",
     "content" : "The Document Object Model is like an API for interacting with our HTML"
