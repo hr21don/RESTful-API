@@ -11,3 +11,60 @@ REST APIs communicate via HTTP requests to perform standard database functions l
 * And a DELETE request to delete one. 
 
 All HTTP methods can be used in API calls. A well-designed REST API is similar to a website running in a web browser with built-in HTTP functionality.
+
+## How to run? || Download the zip file to your downloads directory and extract it.
+
+* Open up a terminal/cmd and change to the directory with app.js in it
+* Run app.js locally using 'nodemon app.js' to start the server on localhost:3000.
+
+## Useful Resources 
+
+* https://ejs.co/
+* https://nodejs.org/en/download/
+* https://www.npmjs.com/package/nodemon 
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+## Build-Your-Own RESTful-API
+
+## Server Code
+
+//jshint esversion:6
+
+const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
+const mongoose = require('mongoose');
+
+const app = express();
+
+app.set('view engine', 'ejs');
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(express.static("public"));
+
+//TODO
+
+app.listen(3000, function() {
+  console.log("Server started on port 3000");
+});
+
+## Example Document
+
+{
+    "title" : "API",
+    "content" : "API stands for Application Programming Interface. It is a set of subroutine definitions, communication protocols, and tools for building software. In general terms, it is a set of clearly defined methods of communication among various components. A good API makes it easier to develop a computer program by providing all the building blocks, which are then put together by the programmer."
+}
+
+
+{
+    "title" : "Bootstrap",
+    "content" : "This is a framework developed by Twitter that contains pre-made front-end templates for web design"
+}
+
+
+{
+    "title" : "DOM",
+    "content" : "The Document Object Model is like an API for interacting with our HTML"
+}
